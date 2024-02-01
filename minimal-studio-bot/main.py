@@ -7,7 +7,7 @@ import os
 load_dotenv()
 TOKEN = token=os.environ.get('TOKEN')
 
-bot = Bot('6597396549:AAEeZZ_5cUoDJ3TMWQJa-EdaylXGx9Ya2To')
+bot = Bot(TOKEN)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['site', 'website'])
